@@ -1,0 +1,93 @@
+﻿<div class="container" ng-init="load()">
+    <div class="row" style="margin-top: 25px;"></div>
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <table class="table">
+                <tr>
+                    <td colspan="6">
+                        <strong>
+                            {{data.currentDetails.name}}
+                        </strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6"><img width="400" class="img-responsive" height="400" alt="N/A" src="{{data.currentDetails.largeImage}}"></td>
+                </tr>
+                <tr>
+                    <th>Short Description</th>
+                    <td>{{data.currentDetails.shortDescription}}</td>
+                    <th>Sale Price</th>
+                    <td>${{data.currentDetails.salePrice}}</td>
+                    <th>Brand Name</th>
+                    <td>{{data.currentDetails.brandName}}</td>
+                </tr>
+                <tr>
+                    <th>Model Number</th>
+                    <td>{{data.currentDetails.modelNumber}}</td>
+                    <th>Customer Rating</th>
+                    <td>{{data.currentDetails.customerRating}}</td>
+                    <th>Two Day Shipping</th>
+                    <td>{{data.currentDetails.isTwoDayShippingEligible}}</td>
+                </tr>
+                <tr>
+                    <th>Available Online</th>
+                    <td colspan="5">{{data.currentDetails.availableOnline}}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+    <!--<div class="row" style="margin-top: 10px;"></div>-->
+
+</div>
+<hr />
+<div><h3>Product Recommendations</h3></div>
+<hr />
+<div class="container" ng-init="recommendations()">
+    <div class="row" ng-show="data.showRecommendations == true">
+        <div ng-repeat="x in data.recommendations track by $index">
+            <div class="col-lg-12">
+                <div>
+                    <table class="table table-bordered">
+                        <tr>
+                            <td colspan="2"><img width="200" height="200" class="img-responsive" src="{{x.largeImage}}"></td>
+                            <th>Name</th>
+                            <td>{{x.name}}</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">{{x.shortDescription}}</td>
+                        </tr>
+                        <tr>
+                            <th>Available Online</th>
+                            <td>{{x.availableOnline}}</td>
+                            <th>Sale Price</th>
+                            <td>{{x.salePrice}}</td>
+                        </tr>
+                        <tr>
+                            <th>Brand Name</th>
+                            <td>{{x.brandName}}</td>
+                            <th>Model Number</th>
+                            <td>{{x.modelNumber}}</td>
+                        </tr>
+                        <tr>
+                            <th>Customer Rating</th>
+                            <td>{{x.customerRating}}</td>
+                            <th>Two Day Shipping</th>
+                            <td>{{x.isTwoDayShippingEligible}}</td>
+                        </tr>
+                        <!--<tr>
+                            <th>Available Online</th>
+                            <td colspan="3">{{x.availableOnline}}</td>
+                        </tr>-->
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" ng-show="data.showRecommendations == false">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4"><strong>No recommendations available for this product</strong></div>
+        <div class="col-lg-4"></div>
+    </div>
+</div>

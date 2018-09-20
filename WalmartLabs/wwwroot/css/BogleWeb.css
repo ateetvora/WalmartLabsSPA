@@ -1,0 +1,13 @@
+﻿@font-face {
+    font-family: 'BogleWeb-Regular';
+    src:url('../fonts/BogleWeb-Regular.eot');
+    src: url('../fonts/BogleWeb-Regular.eot?#iefix-fvbane') format('embedded-opentype'),
+         url('../fonts/BogleWeb-Regular.woff?-fvbane') format('woff'),
+         url('../fonts/BogleWeb-Regular.ttf?-fvbane') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: BogleWeb-Regular;
+}

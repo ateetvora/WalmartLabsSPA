@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "angular.js@1.7.2",
+      "destination": "wwwroot/lib/angular.js/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "angular-ui-router@1.0.20",
+      "destination": "wwwroot/lib/angular-ui-router/"
+    }
+  ]
+}
