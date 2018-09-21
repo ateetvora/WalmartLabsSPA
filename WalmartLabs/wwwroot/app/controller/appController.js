@@ -1,5 +1,4 @@
-﻿/*
-(function () {
+﻿(function () {
     'use strict';
 
     angular
@@ -9,8 +8,10 @@
     appController.$inject = ['$scope', 'productService'];
 
     function appController($scope, productService) {
+
+        /*
         $scope.getSearchResults = function (searchCriteria) {
-            //debugger;
+
             $scope.data.headers = ['Image', 'Name', 'Short Description', 'Sale Price'];
 
             productService.getProducts(searchCriteria)
@@ -96,11 +97,10 @@
                         throw new Error("System could not process the request. Try again later.");
                     });
             }
-        }
+        }*/
 
         $scope.reset = function() {
             $scope.data = null;
         }
     }
 })();
-*/
