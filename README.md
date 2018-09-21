@@ -2,7 +2,7 @@
 
 ## Application Overview
 
-This is an ASP.NET CORE Single Page Application (SPA). It uses the Walmart APIs to return a Product List page (PLP) and shows product recommendations on the Product Detail page (PDP).
+This is an ASP.NET CORE Single Page Application (SPA). It uses the Walmart APIs to return a search results page and shows product recommendations on the Product Detail page (PDP).
 
 I have used ASP.NET CORE 2.1, AngularJS 1.x for client side binding and routing (UI-Route) to build this single page application. Bootsrap 3.x is used to create a responsive design. I have created a facade called ProductService to encapsulate the calls to the Walmart APIs. This makes it testable and maintainable. 
 
@@ -37,4 +37,4 @@ I have added unit tests and integration tests for the ProductController. The uni
 
 1. Bundling and Minification of application level CSS and JavaScript. (Bundler and minification tool does not seem to work with VS2017. And in the interest of time, I did not create a Gulp task.)
 
-2. Paged results on the product list page
+2. Paged results on the search results page
