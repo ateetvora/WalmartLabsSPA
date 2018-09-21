@@ -13,16 +13,9 @@
     <script src="/lib/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="/lib/angular.js/angular.min.js"></script>
     <script src="/lib/angular-ui-router/angular-ui-router.min.js"></script>
-    <!--To bundle-->
-    <!--Begin-->
-    <script type="text/javascript" src="/app/app.js"></script>
-    <script type="text/javascript" src="/app/service/productService.js"></script>
-    <!--<script type="text/javascript" src="/app/controller/appController.js"></script>-->
-    <script type="text/javascript" src="/app/controller/productsController.js"></script>
-    <script type="text/javascript" src="/app/controller/detailsController.js"></script>
-    <!--End-->
+
 </head>
-<body ng-app="walmartApp">
+<body ng-app="walmartApp" onload="document.getElementById('act').focus()">
     <!-- NAVIGATION -->
     <nav class="navbar navbar-custom">
         <div class="container-fluid">
@@ -38,11 +31,11 @@
                 <div class="col-lg-2">
                 </div>
                 <div class="col-lg-7">
-                    <input type="text" placeholder="Search.." ng-model="data.searchCriteria" name="search" style="width: 100%">
+                    <input type="text" placeholder="Search" ng-model="data.searchCriteria" name="search" style="width: 100%; border-style: solid; border-width: medium;">
                 </div>
                 <div class="col-lg-1">
                     <!--<button type="submit" ng-click="getProductRecommendations(data.searchText)"><i class="fa fa-search"></i></button>-->
-                    <a href="/products/{{data.searchCriteria}}"><i class="fa fa-search" aria-hidden="true"></i></a>
+                    <a id="first" href="/products/{{data.searchCriteria}}"><i class="fa fa-search" aria-hidden="true"></i></a>
                 </div>
                 <div class="col-lg-2">
                 </div>
@@ -54,5 +47,12 @@
             </div>
         </div>
     </div>
+    <!--To bundle-->
+    <!--Begin-->
+    <script type="text/javascript" src="/app/app.js"></script>
+    <script type="text/javascript" src="/app/service/productService.js"></script>
+    <script type="text/javascript" src="/app/controller/productsController.js"></script>
+    <script type="text/javascript" src="/app/controller/detailsController.js"></script>
+    <!--End-->
 </body>
 </html>

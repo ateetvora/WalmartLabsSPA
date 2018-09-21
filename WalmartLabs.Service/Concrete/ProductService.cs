@@ -33,7 +33,7 @@ namespace WalmartLabs.Service.Concrete
             using (var client = new HttpClient())
             {
                 var url = new Uri(
-                    $"http://api.walmartlabs.com/v1/search?apiKey={AppSettings.APIKey}&query={searchCriteria}&numItems=25&format=json");
+                    $"http://api.walmartlabs.com/v1/search?apiKey={AppSettings.APIKey}&query={searchCriteria}&numItems=10&format=json");
                 var response = await client.GetAsync(url);
 
                 if (!response.IsSuccessStatusCode)
