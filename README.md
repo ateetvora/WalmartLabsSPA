@@ -20,14 +20,14 @@ I have added unit tests and integration tests for the ProductController. The uni
 
 1. Download and unzip the WalmartSPA master on your computer.
 2. Open the command window
-3. Change directory to navigate to the WalmartLabs folder. Example cd "C:\Users\XYZ\Downloads\WalmartLabsSPA-master\WalmartLabsSPA-master\WalmartLabs\"
+3. Change directory to navigate to the WalmartLabs folder. _Example cd "C:\Users\XYZ\Downloads\WalmartLabsSPA-master\WalmartLabsSPA-master\WalmartLabs\"_
 4. Execute command `dotnet build` to build the application.
 5. Once the application builds successfully, we will now run the tests. 
-6. Change directory to navigate to the WalmartLabs.Tests folder. Example cd "C:\Users\XYZ\Downloads\WalmartLabsSPA-master\WalmartLabsSPA-master\WalmartLabs.Tests" and execute the command `dotnet test`. 
+6. Change directory to navigate to the WalmartLabs.Tests folder. _Example cd "C:\Users\XYZ\Downloads\WalmartLabsSPA-master\WalmartLabsSPA-master\WalmartLabs.Tests"_ and execute the command `dotnet test`. 
 7. All unit tests should pass
-8. Change directory to navigate to the WalmartLabs.IntegrationTests folder. Example cd "C:\Users\XYZ\Downloads\WalmartLabsSPA-master\WalmartLabsSPA-master\WalmartLabs.IntegrationTests"
+8. Change directory to navigate to the WalmartLabs.IntegrationTests folder. _Example cd "C:\Users\XYZ\Downloads\WalmartLabsSPA-master\WalmartLabsSPA-master\WalmartLabs.IntegrationTests"_
 9. Execute command `dotnet test`. All integration tests should pass.
-10. Change directory one last time to navigate to the WalmartLabs (Web App) folder. Example. cd "C:\Users\XYZ\Downloads\WalmartLabsSPA-master\WalmartLabsSPA-master\WalmartLabs"
+10. Change directory one last time to navigate to the WalmartLabs (Web App) folder. _Example. cd "C:\Users\XYZ\Downloads\WalmartLabsSPA-master\WalmartLabsSPA-master\WalmartLabs"_
 11. Execute command `dotnet run` to run the application. Open the browser and type in the website url (http://localhost:5000)
 12. Perform a search for a product on the search bar in the home page. 
 13. Click on the image or product name to view the product details and recommendations. 
