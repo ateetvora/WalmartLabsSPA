@@ -8,7 +8,20 @@ Prerequisites
 
 How to run the application
 
-1. 
+1. Download and unzip the WalmartSPA master on your computer.
+2. Open the command window
+3. Change directory to navigate to the WalmartLabs folder. Example cd "C:\Users\XYZ\Downloads\WalmartLabsSPA-master\WalmartLabsSPA-master\WalmartLabs\"
+4. Execute command "dotnet build" to build the application.
+5. Once the application builds successfully, we will not run the tests. 
+6. Change directory to navigate to the WalmartLabs.Tests folder. Example cd "C:\Users\XYZ\Downloads\WalmartLabsSPA-master\WalmartLabsSPA-master\WalmartLabs.Tests" and execute the command "dotnet test". 
+7. All unit tests should pass
+8. Change directory to navigate to the WalmartLabs.IntegrationTests folder. Example cd "C:\Users\XYZ\Downloads\WalmartLabsSPA-master\WalmartLabsSPA-master\WalmartLabs.IntegrationTests"
+9. Execute command "dotnet test". All integration tests should pass.
+10. Change directory one last time to navigate to the WalmartLabs (Web App) folder. Example. cd "C:\Users\XYZ\Downloads\WalmartLabsSPA-master\WalmartLabsSPA-master\WalmartLabs"
+11. Execute command "dotnet run" to run the application. Open the browser and type in the website url (http://localhost:5000)
+12. Perform a search for a product on the search bar in the home page. 
+13. Click on the image or product name to view the product details and recommendations. 
+14. Use browser back button to go back to the list page, or on the Walmart image to start a new search.
 
 Application Overview
 
